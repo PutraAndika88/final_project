@@ -1,7 +1,3 @@
-!pip install matplotlib
-!pip install pandas
-!pip install seaborn
-!pip install streamlit babel
 import sys
 sys.path.append("/content/func.py")
 
