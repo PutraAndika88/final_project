@@ -1,6 +1,3 @@
-import sys
-sys.path.append("/content/func.py")
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -50,6 +47,7 @@ map_plot = BrazilMapPlotter(data, plt, mpimg, urllib, st)
 daily_orders_df = function.create_daily_orders_df()
 review_score, common_score = function.review_score_df()
 state, most_common_state = function.create_bystate_df()
+order_status, common_status = function.create_order_status()
 
 st.header("E-Commerce Dashboard :convenience_store:")
 
