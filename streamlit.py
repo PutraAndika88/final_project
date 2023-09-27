@@ -10,11 +10,11 @@ sns.set(style='dark')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 datetime_cols = ["order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "order_purchase_timestamp", "shipping_limit_date"]
-all_df = pd.read_csv("/content/data_besar.csv")
+all_df = pd.read_csv("data_besar.csv")
 all_df.sort_values(by="order_approved_at", inplace=True)
 all_df.reset_index(inplace=True)
 
-geolocation = pd.read_csv('/content/geolocation.csv')
+geolocation = pd.read_csv('geolocation.csv')
 data = geolocation.drop_duplicates('customer_unique_id')
 
 for col in datetime_cols:
@@ -25,10 +25,10 @@ max_date = all_df["order_approved_at"].max()
 
 with st.sidebar:
     # Title
-    st.title("Hanif Al Irsyad")
+    st.title("E-commerce Dashboard")
 
     # Logo Image
-    st.image("https://i.pinimg.com/564x/ad/81/87/ad81871fc5e2e20d3f48c6b09a0edcb4.jpg")
+    st.image("streamlits.jpg")
 
     # Date Range
     start_date, end_date = st.date_input(
