@@ -2,8 +2,6 @@ import sys
 sys.path.append("/content/func.py")
 
 import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import seaborn as sns
 import streamlit as st
 import urllib
