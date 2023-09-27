@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1-zgk8Pi48anlYtqp17VTTtnczRnEd6el
 """
 
-pip install streamlit babel
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
